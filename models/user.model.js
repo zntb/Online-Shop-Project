@@ -1,4 +1,4 @@
-const { signup } = require("../controllers/auth.controller");
+// const { signup } = require("../controllers/auth.controller");
 
 const bcrypt = require("bcryptjs");
 
