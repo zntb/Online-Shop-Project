@@ -1,18 +1,17 @@
 function getProducts(req, res) {
-    res.render("admin/products/all-products")
+  res.render("admin/products/all-products");
 }
 
 function getNewProduct(req, res) {
-    res.render("admin/products/new-product")
+  res.render("admin/products/new-product");
 }
 
-function createNewProduct(params) {
-    //
+function createNewProduct(req, res) {
+  res.redirect("/admin/products");
 }
 
 module.exports = {
-    getProducts: getProducts,
-    getNewProduct: getNewProduct,
-    createNewProduct: createNewProduct
-}
-
+  getProducts: getProducts,
+  getNewProduct: getNewProduct,
+  createNewProduct: createNewProduct,
+};
