@@ -1,6 +1,8 @@
 class Cart {
-  constructor(items = []) {
+  constructor(items = [], totalQuantity = 0, totalPrice = 0) {
     this.items = items;
+    this.totalQuantity = totalQuantity;
+    this.totalPrice = totalPrice;
   }
 
   addItem(product) {
@@ -15,10 +17,17 @@ class Cart {
         cartItem.quantity = cartItem + 1;
         cartItem.totalPrice = cartItem.totalPrice + product.price;
         this.items[i] = cartItem;
+
+        this.totalQuantity++; // this.totalQuantity + 1
+        this.totalPrice += product.price; // this.totalPrice + product.price
         return;
       }
     }
 
     this.items.push(cartItem);
+    this.totalQuantity++;
+    this.totalPrice += product.price;
   }
 }
+
+module.exports = Cart;
