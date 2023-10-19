@@ -8,7 +8,7 @@ router.post("/", ordersController.addOrder); // /orders
 
 router.get("/", ordersController.getOrders); // /orders!
 
-router.get("/succes", ordersController.getSucces);
+router.get("/success", ordersController.getSucces);
 
 router.get("/failure", ordersController.getFailure);
 
