@@ -13,11 +13,11 @@
     "bcryptjs": "^2.4.3",
     "connect-mongodb-session": "^4.0.0",
     "csurf": "^1.11.0",
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.10",
     "express": "^4.22.1",
     "express-session": "^1.18.2",
     "mongodb": "^6.21.0",
-    "multer": "^2.0.2",
+    "multer": "^2.1.0",
     "stripe": "^14.25.0",
     "uuid": "^9.0.1"
   },
